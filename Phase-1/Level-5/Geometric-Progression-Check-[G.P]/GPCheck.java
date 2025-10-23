@@ -1,0 +1,22 @@
+//* Take three numbers and check if they are in geometric progression.
+
+import java.util.Scanner;
+
+public class GPCheck {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number 1 : ");
+        int num1 = sc.nextInt();
+        System.out.print("Enter number 2 : ");
+        int num2 = sc.nextInt();
+        System.out.print("Enter number 3 : ");
+        int num3 = sc.nextInt();
+
+        if (num2 * num2 == num1 * num3) {
+            System.out.println("They are in geometric progression.");
+        } else {
+            System.out.println("They are not  in geometric progression.");
+        }
+        sc.close();
+    }
+}
